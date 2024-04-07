@@ -1,0 +1,59 @@
+@import 'mainStyle';
+
+
+ 
+ // canvas scss
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Set the body height to full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  #canvas {
+    /* Your existing canvas styles */
+    // width: 800px;
+    // height: 800px;
+    background-image: url('../../images/Ladder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    // border: 10px solid red;
+  }
+  
+  #bomb, #coin {
+    display: none;
+  }
+
+  #score {
+    color: white;
+  }
+
+//responsive
+@media only screen and (max-width: 1024px) {
+  #canvas{
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+//for tablet
+ #canvas{
+  width: 500px;
+  height: 500px;
+ }
+ 
+}
+
+@media only screen and (max-width: 500px) {
+
+  //for mobile phones
+  #canvas{
+    width: 300px;
+    height: 300px;
+  }
+}  

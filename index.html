@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage-Jesus flies</title>
+    <script src="../typescript/dist/game.js" defer></script>
+    <script src="../typescript/dist/index.js" defer></script>
+    <link rel="stylesheet" href="../scss/dist/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+
+<body>
+    <div class="main">
+        <form id="LogInForm" onsubmit="hendleLogIn(event)">
+            <h1>Jesus fly</h1>
+            <input type="text" name="username" placeholder="Enter User Name" required>
+            <input type="submit" value="Play">
+        </form>
+        <button id="scoreboardBtn" onclick="showScoreboard()"></button>
+    </div>
+    <div id="cursorShadow"></div>
+
+    <footer>
+        <p>Credits to Doriel Shacham, Shiran, Tamar</p>
+    </footer>
+</body>
+
+</html>
